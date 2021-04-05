@@ -26,6 +26,8 @@ object scenarios {
     .pause(2)
     .exec((http("CreateUser4_2")
       .get("/api/users").check(statusCheck)))
+    .pause(1)
+    .exec(createUsers1)
 
 
 
