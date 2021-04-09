@@ -22,7 +22,7 @@ class CreateUsersSimulation extends Simulation{
   setUp(
     //scn.inject(rampUsers(5).during(10 seconds)).protocols(baseURL),
     //scn1.inject(rampUsers(5).during(10 seconds)).protocols(baseURL),
-    //scn2.inject(rampUsers(5).during(10 seconds)).protocols(baseURL),
+    scn2.inject(rampUsers(5).during(5 seconds)).protocols(baseURL),
     scn3.inject(rampUsers(4).during(5 seconds)).protocols(baseURL)
 
   )
