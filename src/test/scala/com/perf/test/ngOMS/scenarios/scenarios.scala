@@ -23,7 +23,7 @@ object scenarios {
   val scn3 = scenario("CreateUser4")
     .exec(http("CreateUser4_1")
       .get("/api/users").check(statusCheck))
-    .pause(2)
+    .pause(3)
     .exec((http("CreateUser4_2")
       .get("/api/users").check(statusCheck)))
     .pause(1)
